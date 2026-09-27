@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="container footer-inner">
         <div className="footer-col">
-          <h3>KurtiKraft</h3>
+          <h3>Badaraa.in</h3>
           <p>Elegant ethnic wear crafted for the modern woman. Long & short kurtis in premium fabrics.</p>
         </div>
         <div className="footer-col">
@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        © {new Date().getFullYear()} KurtiKraft. All rights reserved.
+        © {new Date().getFullYear()} Badaraa.in. All rights reserved.
       </div>
     </footer>
   );

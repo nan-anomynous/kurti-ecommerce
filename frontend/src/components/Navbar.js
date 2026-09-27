@@ -21,7 +21,7 @@ const Navbar = () => {
     <header className="navbar">
       <div className="container navbar-inner">
         <Link to="/" className="navbar-logo">
-          Kurti<span>Kraft</span>
+          Badaraa<span>.in</span>
         </Link>
 
         <button className="navbar-toggle" onClick={() => setMenuOpen(!menuOpen)}>
