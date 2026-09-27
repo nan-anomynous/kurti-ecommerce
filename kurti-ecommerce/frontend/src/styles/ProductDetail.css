@@ -1,0 +1,159 @@
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  padding: 48px 24px 80px;
+}
+
+.pd-main-img {
+  aspect-ratio: 3/4;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--color-primary-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.pd-main-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pd-thumbs {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.pd-thumbs img {
+  width: 70px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  opacity: 0.6;
+  border: 2px solid transparent;
+  transition: all var(--transition);
+}
+
+.pd-thumbs img.active {
+  opacity: 1;
+  border-color: var(--color-primary);
+}
+
+.pd-info h1 {
+  font-size: 2rem;
+  margin: 12px 0 6px;
+}
+
+.pd-color {
+  color: var(--color-text-muted);
+  text-transform: capitalize;
+  margin-bottom: 16px;
+}
+
+.pd-price {
+  margin-bottom: 20px;
+}
+
+.pd-price .price-discount {
+  font-size: 1.5rem;
+}
+
+.pd-description {
+  color: var(--color-text-muted);
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+.pd-fabric {
+  margin-bottom: 24px;
+  font-size: 0.9rem;
+}
+
+.pd-sizes, .pd-qty {
+  margin-bottom: 24px;
+}
+
+.pd-sizes label, .pd-qty label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.size-options {
+  display: flex;
+  gap: 10px;
+}
+
+.size-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-border);
+  background: #fff;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-weight: 500;
+  transition: all var(--transition);
+}
+
+.size-btn:hover:not(.disabled) {
+  border-color: var(--color-primary);
+}
+
+.size-btn.active {
+  background: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+}
+
+.size-btn.disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+
+.stock-info {
+  margin-top: 10px;
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+}
+
+.qty-selector {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  width: fit-content;
+  padding: 6px 16px;
+}
+
+.qty-selector button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--color-primary);
+}
+
+.pd-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.pd-actions .btn {
+  flex: 1;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .product-detail {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
